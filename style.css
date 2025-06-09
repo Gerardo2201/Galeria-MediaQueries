@@ -260,6 +260,7 @@ label[for="name"]{
         display: inline-block;
         padding: 0.5%;
         padding-left: 1.5%;
+        resize: none;
         
         
     }
@@ -347,6 +348,7 @@ label[for="name"]{
     #cuadro{
         width: 95%; /* El campo de entrada ocupará el 100% del ancho */
         font-size: 1.3rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+        resize: none;
 
     }
 
