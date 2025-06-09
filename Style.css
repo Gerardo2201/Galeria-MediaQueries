@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap'); /*Traemos la fuente desde google fonts de nombre "Single day"*/ 
+
+*{
+    margin: 0px; /*Resetea el margen predeterminado del navegador*/
+    padding: 0px;/*Resetea el espaciado interno predeterminado del navegador*/
+    box-sizing: border-box; /*Hacemos quue el ancho y alto de un elemento incluya el padding y el borde*/
+    font-family: "Single Day"; /*Fuente original traida desde google fonts*/
+    font-style: normal; /*Asegura que el texto no se muestre en cursiva*/
+    font-size: 16px; /*Cambia el tamaño de los textos a 15px*/
+    font-weight: bold; /*Cambia el estilo de la fuente a bold*/
+    
+  }
+  
+  /*linear-gradient(120deg, #a1c4fd60 0%, #c2e9fb65 100%),*/
+
+  body{ /* Selector para especificar el body del documento html*/
+    width: 100vw; /* Ocupa el 100% del ancho de la pantalla */
+    height: 100vh; /* Ocupa el 100% de la altura de la pantalla */
+    margin: 0; /* Asegura que no haya espacio alrededor del body */
+    padding: 0;
+    background-image: linear-gradient(rgba(81, 84, 87, 0.7) 0%, rgb(81, 84, 87, 0.8) 100%), url(Imagenes/Fondo.jpg); /* agregamos el color encima de la imagen, en este caso es un color gradiante que cambia el color del fondo ligeramente a gris*/
+    background-position: center;/* Centra la imagen de fondo en la pagina*/
+
+    background-repeat: no-repeat; /*Para que la imagen no se repita*/
+    background-size: cover; /*Para que cubra todo el espacio en pantalla*/
+    background-attachment: fixed; /*Mantiene la imagen fija*/
+}
+
+
+.imagen {
+      height: 400px;
+      width: 350px;
+      display: inline-block;
+      transition: 0.8s;
+      object-fit: contain;
+}
+
+.img{ /*Selecciona las etiquetas que lleven como nombre de clase "img"*/
+      height: 400px; /*Ajustamos la altura a un valor fijo*/
+      width: 350px;/*Ajusta el ancho a un valor fijo*/
+      object-fit: contain; /*Mantiene la proporcion de la imagen sin recortarla*/  
+}
+
+
+
+.imagen:hover{
+  filter: drop-shadow(5px 3px 5px white);
+  transition: 0.8s;
+  transform: scale3d(0.8, 0.8, 0.8);
+  
+}
+
+
+
+.card {
+    width: 23.75rem; /* Ancho de la tarjeta 380px aprox */
+    min-height: 480px; /* Altura mínima igual para todas 480px aprox */
+    display: inline-block; /* La tarjeta se alinea con los demas elementos*/
+    vertical-align: top; /* Alineamos el borde superior con los demas elementos en linea */
+    overflow: hidden; /* Esto evita que el contenido sobresalga */
+    margin: 1.3em; /* Margin ajustado a 20px aprox*/
+    padding: 0.63em; /* Padding ajustado a 10px aprox */
+    background-color: #808080; /* Color de fondo por defecto para las tarjetas*/
+    border-radius: 10px; /* Borde de la tarjeta para mejor apreciacion visual*/
+    box-sizing: border-box; /* El alto y ancho incluyen padding y marging para que no se sumen los valores directamente*/ 
+    
+  }
+
+
+
+.card1 { /* Selector de clase que selecciona toda etiqueta que tenga como nombre de clase "Card1"*/ 
+
+background-color: rgb(204, 204, 0); /* Cambia el color de fondo de la primera tarjeta a Amarillo*/
+}
+
+.card2 { /* Selector de clase que selecciona toda etiqueta que tenga como nombre de clase "Card2"*/ 
+  background-color: rgb(0, 0, 153); /* Cambia el color de fondo de la primera tarjeta a Azul */
+}
+
+.card3{ /* Selector de clase que selecciona toda etiqueta que tenga como nombre de clase "Card3"*/ 
+  background-color: rgb(0, 102, 51); /* Cambia el color de fondo de la primera tarjeta a Verde */
+}
+
+.card4{ /* Selector de clase que selecciona toda etiqueta que tenga como nombre de clase "Card4"*/ 
+  background-color: rgb(204, 0, 0); /* Cambia el color de fondo de la primera tarjeta a Rojo */
+}
+
+.card5{ /* Selector de clase que selecciona toda etiqueta que tenga como nombre de clase "Card5"*/ 
+  background-color: rgb(128, 128, 128); /* Cambia el color de fondo de la primera tarjeta a Gris */
+}
+
+.card6{ /*Selector de clase que selecciona toda etiqueta tenga como nombre de clase "card6"*/
+  background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%); /*Cambia el color de la tarjeta a una combinacion del color azul verde aguamarina y amarillo*/
+}
+
+.card7{
+  /*Selector de clase que selecciona toda etiqueta tenga como nombre de clase "card7"*/
+  background: radial-gradient(circle,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%) 
+
+  /*Crea un degradado circular desde el centor hacia afuera usando los colores azul muy oscuro, azul intenso y aguamarina brillante*/
+  }
+
+.card1 p{ /*Selector que especifica todos los tipo p dentro de la clase card1*/
+  text-transform: uppercase; /*Pone por defecto el texto en mayuscula*/
+  letter-spacing: 2px;/*Crea un espacio de 2 pixeles entre cada letra*/
+  text-shadow: 8px 8px 5px red;
+  /*Agrega una sombra al texto que tiene 8px a los dos lados, 8px arriba y abajo y 5px como difuminado y cambia el color de la sombra a rojo*/
+}
+
+.card:hover{
+    background-color: rgba(86, 152, 156, 0.8);
+    transition: 0.8s;
+  }
+  
+  
+body h1{
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(46, 196, 188, 0.8);
+  }
+
+.card h2{ /* Selecciona todos los h2 que se encuentren dentro de una etiqueta que tenga el nombre "card" como clase*/
+    text-align: center; /*Alinea el texto en el centro*/
+    color: rgba(61, 37, 194, 0.8); /* Cambia le color del texto con el sistema hexadecimal a "morado"*/
+  }
+  
+.card p {
+    color: black; /*Cambia el color de la fuente a negro*/
+    text-align: center; /*Alinea el texto en el centro*/
+    display: inline-block; /*Permite manejar el parrafo como un elemento de bloque*/
+    font-size: 1.1rem;   /* Aumenta un poco el tamaño del texto, aprox 17px */
+    line-height: 1.4rem;/*Controla el espacio entre las lineas de parrafo*/
+    margin: 0.5rem; /*Espacio al rededor del texto*/
+    white-space: nowrap; /*Evita el salto de linea*/
+  }
+
+  .card p:hover{
+    white-space: normal;
+    
+  }
+
+p::first-letter {
+    font-style: bold;
+    text-transform: uppercase;
+    color: red;
+  }
+
+.card-responsiva{ /*Selecciona toda etiqueta que lleve como nombre de clase "card-responsiva*/
+  max-width: 100%; /* La imagen nunca será más ancha que su contenedor */
+  height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+  display: inline-block; /* permite que la tarjeta siga en linea con los demas elementos */
+  margin: 0, auto;  /* Centra la imagen horizontalmente si su contenedor lo permite */
+}
+
+
+
+.formulario{
+  
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 1.5rem;
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    padding: 0.2rem;
+}
+
+
+.inicio{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 1.5rem;
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    padding: 0.2rem;
+}
+
+.CajaForm{
+  width: 90%;
+  height: 80%;
+  margin: 0 auto;
+  margin-top: 4%;
+  border: solid 8px gray;
+  overflow: hidden;
+  background-image: url(Imagenes/goku_normal.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 0;
+
+}
+
+
+form{
+  width: 100%;
+  display: inline-block;
+  padding: 2rem;
+  margin-left: 2%;
+  
+}
+
+.TituloFormulario{
+  margin-top: 2%;
+  font-size: 1.8rem;
+
+}
+
+#name{ /* Selecciona los campos de entrada del formulario */
+        width: 98%; /* El campo de entrada ocupará el 100% del ancho */
+        font-size: 1.3rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+        margin-bottom: 3%;
+        
+        display: inline;
+        padding: 0.5%;
+        padding-left: 1.5%;
+    
+      }
+label[for="name"]{
+  font-size: 1.5rem;
+}
+        
+     
+    #email{
+        width: 98%; /* El campo de entrada ocupará el 100% del ancho */
+        font-size: 1.3rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+        margin-bottom: 3%;
+        margin-right: 15%;
+        display: inline-block;
+        padding: 0.5%;
+        padding-left: 1.5%;
+        position: static;
+    } 
+    label[for="email"]{
+      font-size: 1.5rem;
+      
+      
+    }
+
+    #telefono{
+        width: 98%; /* El campo de entrada ocupará el 100% del ancho */
+        font-size: 1.3rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+        margin-bottom: 3%;
+        display: inline-block;
+        padding: 0.5%;
+        padding-left: 1.5%;
+        margin-right: 35%;
+    }
+    label[for="telefono"]{
+      font-size: 1.5rem;
+    }
+  
+
+    #cuadro{
+        width: 50%; /* El campo de entrada ocupará el 100% del ancho */
+        font-size: 1.3rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+        display: inline-block;
+        padding: 0.5%;
+        padding-left: 1.5%;
+        
+        
+    }
+    
+    label[for="cuadro"]{
+      font-size: 1.5rem;
+      margin-right: 5px; /* pequeño espacio entre el label y el input */
+    }
+   
+
+  
+
+    #boton{
+        width: 10rem; /* El botón ocupará el 100% del ancho */
+        font-size: 1.5rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+        padding: 0.5rem; /* Añade un poco de espacio interno al botón */
+        display: inline-block; /* Permite que el botón se alinee con otros elementos */
+        margin-left: 30%;
+        margin-top: 3%;
+        display: block;
+    }
+        
+
+
+@media (max-width: 430px) { /* Media query para pantallas pequeñas */
+
+    .CajaForm{
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 4%;
+    border: solid 8px lightblue;
+    overflow: hidden;
+    background-image: url(Imagenes/roshi.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 1;
+
+    }
+    
+    .card {
+        width: 80%; /* Las tarjetas ocuparán el 100% del ancho en pantallas pequeñas */
+        margin: 0.5rem; /* Ajusta el margen para pantallas pequeñas */
+        margin-left: 10vw; /* Centra las tarjetas horizontalmente */
+    }
+    .imagen {
+        width: 100%; /* Las imágenes ocuparán el 100% del ancho de la tarjeta */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    .inicio{
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-bottom: 6%;
+        font-size: 1.3rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+        color: black;
+    }
+    .TituloFormulario{
+        text-align: center; /* Alinea el texto al centro */
+        font-size: 1.4rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+        margin-top: 3%; /* Añade un margen superior */
+        margin-bottom: 3%; /* Añade un margen inferior */
+    }
+
+    #name{ /* Selecciona los campos de entrada del formulario */
+        width: 95%; /* El campo de entrada ocupará el 100% del ancho */
+        font-size: 1.3rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+        margin-bottom: 3%;}
+        
+     
+    #email{
+        width: 95%; /* El campo de entrada ocupará el 100% del ancho */
+        font-size: 1.3rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+        margin-bottom: 3%;
+    } 
+
+    #telefono{
+        width: 95%; /* El campo de entrada ocupará el 100% del ancho */
+        font-size: 1.3rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+        margin-bottom: 3%;
+    }
+
+    #cuadro{
+        width: 95%; /* El campo de entrada ocupará el 100% del ancho */
+        font-size: 1.3rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+
+    }
+
+    #boton{
+        width: 10rem; /* El botón ocupará el 100% del ancho */
+        font-size: 1rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+        padding: 0.5rem; /* Añade un poco de espacio interno al botón */
+        display: inline-block; /* Permite que el botón se alinee con otros elementos */
+        margin-left: 30%;
+        margin-top: 3%;
+        
+    }
+    
+
+    form{
+        width: 100%; /* El formulario ocupará el 100% del ancho */
+        padding: 1rem; /* Añade un poco de espacio interno */
+        display: inline-block; /* Permite que el formulario se alinee con otros elementos */
+    }
+    .TituloFormulario{
+      margin-top: 20%;
+    }
+}
+
+ @media print {
+
+  body {
+        background: none; /* Elimina el fondo al imprimir */
+        color: blue;} /* Cambia el color del texto*/
+  .imagen {
+        display: none; /* Oculta las imágenes al imprimir */
+  }
+
+  .card p{
+    color: blue; /* Cambia el color del texto de las tarjetas al imprimir */
+  }
+  
+        }
